@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!--== head 공통 ====-->
+
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>80Mtindex</title>
-       <!-- jQuery mobile에서 사용하는 css, javascript. 아래 3개의 리소스를 로드해야 함 -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-<link rel="stylesheet" href="http://demos.jquerymobile.com/1.1.0/docs/_assets/css/jqm-docs.css"/>
-<!--<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-<script src="http://demos.jquerymobile.com/1.1.0/docs/_assets/js/jqm-docs.js"></script>-->
+    <link rel="stylesheet" href="nav.css" />
+<!--=== jquery  mobil ==  -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.1.2/jquery.mobile-1.1.2.min.js"></script
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-
-        <style>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- 공통 연결 -->
+       <style>
         html { overflow-y:scroll; overflow-x:hidden; }
         </style>
 
@@ -35,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="./css/layout.css" />
     <link href='./css/bannerImageSlider.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="./js/bannerImageSlider.js"></script>
-
+<!-- == head 공통 끝 == -->
 <style>
 /* 벌의 비행 */   
 .bee {max-width:100%px; margin:0 auto; position:relative;}
@@ -93,113 +80,40 @@
  
   </style>
 
-
-
 </head>
-
-
-
-<body> 
-
-    <!--=======공통메뉴 =========-->
-
-    <div data-role="page" class="type-interior">
-
-        <div data-role="header" data-theme="f">
-        <h1>팔공산 홈</h1>
-        <a href="../../" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
-        <a href="../nav.html" data-icon="search" data-iconpos="notext" data-rel="dialog" data-transition="fade">Search</a>
-    </div><!-- /header -->
-
-    <div data-role="content">
-        <div class="content-primary">   
-        <ul data-role="listview">
-            <li><h3>소개</h3>
-                <p>Information.</p>
-            
-                <ul>
-                    
-                    <li> <a href="80gaeyo.html" target="_self">개요</a> </li>
-                    <li> <a href="80year.html">만든시기</a> </li>
-                    <li> <a href="80purpose.html" target="_self">목적</a> </li>
-                </ul>
-            </li>
-
-            <li>
-
-                <h3>사찰(사)</h3>
-                <p>선본사등.</p>
-    
-                <ul>
-                    <li> <a href="80sunbonsa.html" target="_self">선본사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">관암사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">동화사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">은해사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">복지장사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">파계사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">부인사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">오은사</a> </li>
-                    <li> <a href="80sunbonsa.html" target="_self">송림사</a> </li>
-                </ul>
-            </li>
-            <li>
-                <h3>사찰(암)</h3>
-                <p>오도암등.</p>
-                
-                <ul>
-                   
-                    <li> <a href="80odoam.html" target="_self">오도암</a> </li>
-                    <li> <a href="80jinbulam.html" target="_self">진불암</a> </li>
-                    <li> <a href="80jungangam.html" target="_self">중앙암</a> </li>
-                    <li> <a href="80odoam.html" target="_self">약사암</a> </li>
-                    <li> <a href="80odoam.html" target="_self">묘봉암</a> </li>
-                    <li> <a href="80odoam.html" target="_self">삼성암</a> </li>
-                    <li> <a href="80odoam.html" target="_self">염불암</a> </li>
-                    <li> <a href="80odoam.html" target="_self">제2석굴암</a> </li>
-                            
-                </ul>
-            </li>
-
-            <li>
-                <h3>명소</h3>
-                <p>비로봉등.</p>
-                
-                <ul>
-                   
-                    <li> <a href="80odoam.html" target="_self">비로봉</a> </li>
-                    <li> <a href="80odoam.html" target="_self">동봉</a> </li>  
-                    <li> <a href="80odoam.html" target="_self">서봉</a> </li>
-                    <li> <a href="80odoam.html" target="_self">수태골</a> </li>
-                    <li> <a href="80odoam.html" target="_self">케이블카</a> </li>
-                            
-                </ul>
-            </li>
-
-            <li>
-                <h3>심심풀이</h3>
-                <p>Everything from cars to planes.</p>
-                
-                <ul>
-                   
-                    <li> <a href="80urae.html" target="_self">팔공산의 유래</a> </li>
-                    <li> <a href="80odoam.html" target="_self">비슬산</a></li>
-                    <li> <a href="80odoam.html" target="_self">앞산</a> </li>
-                    <li> <a href="80odoam.html" target="_self">용지봉</a>  </li>
-                            
-                </ul>
-            </li>
-
-
-
+<!--<div style="overflow: hidden;" data-role="header">
+<h1>I'm a header</h1>
+    <a class="ui-btn-right" href="#" data-icon="gear">Options</a>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
         </ul>
-        </div><!--/content-primary -->      
+    </div>--><!-- /navbar -->
+<!--</div>--><!-- /header -->
 
-        
-    
+<body>  
+  <div style="overflow: hidden;" class="nav-glyphish-example" data-role="header" data-theme="b">
 
-    </div><!-- /page -->
+  <h1><a id="mt80" href="nav.html" target="_self" data-icon="custom">팔공산</a></h1>
 
-<!--=======공통메뉴 끝=========-->
+<div class="nav-glyphish-example" data-role="footer" data-theme="b">
+    <div class="nav-glyphish-example" data-role="navbar" data-grid="d">
+    <ul>
+        <li><a id="sogae" href="index.html" target="_self" data-icon="custom">소   개</a></li>
+        <li><a id="sa" href="#" data-icon="custom">사찰(사)</a></li>
+        <li><a id="am" href="#" data-icon="custom">사찰(암)</a></li>
+        <li><a id="peak" href="#" data-icon="custom">명   소</a></li>
+        <li><a id="smile" href="#" data-icon="custom">심심풀이</a></li>
+        <li><a id="smile" href="#" data-icon="custom">심심풀이</a></li>
+        <li><a id="am" href="#" data-icon="custom">사찰(암)</a></li>
+        <li><a id="am" href="#" data-icon="custom">사찰(암)</a></li>
+        <li><a id="am" href="#" data-icon="custom">사찰(암)</a></li>       
+    </ul>
+    </div><!-- /navbar -->
+</div><!-- /footer -->   
+</div><!-- /header -->
 
 <!--===== 배너관리 - 슬라이드 (목록별 다르게 이미지등 ) ===========  -->
 <div>
@@ -289,6 +203,8 @@
             <h1 style="color:blue; text-align:center"><strong>팔공산의 사찰과 명소</strong></h1>
             <h4 style="color:black; text-align:center">갓바위를 비롯한 동화사 오대암 중암암 등 </h4>
             <h4 style="color:black; text-align:center">비로봉 동봉  수태골등 등<h4>
-    </body>
-    </html>
 
+ <!--===== 목록별 정리 끝 =====-->           	
+
+</body>
+</html>
