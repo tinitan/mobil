@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-
-<!--== head 공통 ====-->
-
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>80Mtindex</title>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Munjuran</title>
+
 <!--=== mobil 용==  -->
 <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
 <script src="./js/jquery-1.11.1.min.js"></script>
@@ -23,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="./css/layout.css" />
     <link href='./css/bannerImageSlider.css' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="./js/bannerImageSlider.js"></script>
+    <link rel="stylesheet" href="./css/mainadd.css" />
+    <!-- 추가용 css  -->  
 <!-- == head 공통 끝 == -->
 <style>
 /* 벌의 비행 */   
@@ -83,55 +83,65 @@
 
 </head>
 
-<body>  
-  <div style="overflow: hidden;" data-role="header" data-theme="b">
 
-  <h1><a href="index.html" target="_self" data-icon="custom">팔공산</a></h1>
+<body>  
+  <div style="overflow: hidden;" class="nav-glyphish-example" data-role="header" data-theme="b">
+
+  <h1><a id="mt80" href="index.html" target="_self" data-icon="custom">팔공산</a></h1>
+  <h1><a id="mt80" href="80urae.html" target="_self" data-icon="custom">심심풀이</a></h1>
+
 
 <div class="nav-glyphish-example" data-role="footer" data-theme="b">
     <div class="nav-glyphish-example" data-role="navbar" data-grid="d">
     <ul>
-        <li><a id="sogae" href="80gaeyo.html" target="_self" data-icon="custom">소   개</a></li>
-        <li><a id="sa"  href="80sunbonsa.html" target="_self" data-icon="custom">사찰(사)</a></li>
-        <li><a id="am" href="80odoam.html" target="_self" data-icon="custom">사찰(암)</a></li>
-        <li><a id="am" href="biropeak.html" target="_self" data-icon="custom">명 소</a></li>
-        <li><a id="am" href="80urae.html" target="_self" data-icon="custom">심심풀이</a></li>
-           
+
+        <li><a id="sogae" href="80urae.html" target="_self" data-icon="custom">팔공산의 유래</a></li>
+        <li><a id="sa" href="80urae.html" target="_self" data-icon="custom">비슬산</a></li>
+        <li><a id="am" href="80urae.html" target="_self" data-icon="custom">앞 산</a></li>
+        <li><a id="am" href="80urae.html" target="_self" data-icon="custom">용지봉</a></li>
+        <li><a id="am" href="munjuran.html" target="_self" data-icon="custom">문주란의 회생</a></li>
     </ul>
     </div><!-- /navbar -->
 </div><!-- /footer -->   
 </div><!-- /header -->
 
 <!--===== 배너관리 - 슬라이드 (목록별 다르게 이미지등 ) ===========  -->
-<div>
+
+<div  >
   <div class="banner_slide" >
       <div class="pm-txt_basic__163694_" >
           <div class="txt_box__163694_" >
-             <div class="bee"><IMG src="./img/home/bee.png"></div> 
-          </div>
-      </div>
-   
+             
+         </div>
+     </div>
+
   <!-- #region Jssor Slider Begin -->
-      <script src="./js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
+  <script src="./js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
 
-      <div style="width: 100%; height: auto; background-color: #000; ">
-          <div style="width: 100%; height: 5px; background-color: White; color: white; padding-top: 13px; text-align: center;"></div>
-      </div>
+  
+  <div style="width: 100%; height: auto; background-color: #000; ">
+  <div style="width: 100%; height: 5px; background-color: White; color: white; padding-top: 13px; text-align: center;"></div>
+  </div>
 
-      <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:880px;overflow:hidden;visibility:hidden;">
+   <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:880px;overflow:hidden;visibility:hidden;">
+
+
   <!-- Loading Screen -->
-         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);"></div>
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+   <!-- svg파일확인  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />-->
+        </div>
 
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1920px;height:880px;overflow:hidden;">
        
-            <div>  <img data-u="image" src="./img/home/01.jpg" alt="갓바위"/>  </div>
-            <div>  <img data-u="image" src="./img/home/02.jpg" alt="갓바위풍경"/>  </div>
-            <div>  <img data-u="image" src="./img/home/03.jpg" />  </div>
-            <div>  <img data-u="image" src="./img/home/04.jpg" />  </div>
-            <div>  <img data-u="image" src="./img/home/05.jpg" />  </div>
-            <div>  <img data-u="image" src="./img/home/06.jpg" />  </div>
-      
+            <div>  <img data-u="image" src="./img/munjuran/20140730_01.jpg" alt="이미지1"/>  </div>
+            <div>  <img data-u="image" src="./img/munjuran/20150621_02.jpg" alt="이미지2"/>  </div>
+            <div>  <img data-u="image" src="./img/munjuran/20160612_03.jpg" />  </div>
+            <div>  <img data-u="image" src="./img/munjuran/20160814_04.jpg" />  </div>
+            <div>  <img data-u="image" src="./img/munjuran/20160831_05.jpg" />  </div>
+            <div>  <img data-u="image" src="./img/munjuran/20170615_06.jpg" />  </div>
+
         </div>
+
 
     <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb053" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -143,7 +153,6 @@
         </div>
 <!-- Arrow Navigator 화살표가 왜 작동안하는지?-->
         <div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                 <circle class="c" cx="8000" cy="8000" r="5920"></circle>
                 <polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
@@ -158,7 +167,7 @@
                 <line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
             </svg>
         </div>
-      </div>
+    </div>
 
   
 <script type="text/javascript">jssor_1_slider_init();</script>
@@ -167,51 +176,50 @@
 <div class="banner_slide" >
  <div class="pm-txt_basic__163694_" >
   <div class="txt_box__163694_" >
+    
+ </div></div></div> 
+
+
+<!-- ======= 추가 개별 설명 및 사진  ===== -->
+
+<div id="wrapper">
+
+<header id="header">
+            <h1><strong>문주란의 부활</strong></h1>
+            <h4>원인을 알수 없이 시들어 가던 문주란에 기적이 발생하였다</h4>
+            <h4>베란다에서 키우던 문주란을 사정상 아파트 주차장으로 옮겨두었더니 어느날 되살아 났다.<h4>
+</header>
   
+<!-- Main  사진업로드 -->
+<section id="main">
+<section class="thumbnails">
+  <div>
+     <a href="./img/munjuran/20140730_01.jpg">
+     <img src="./img/munjuran/20140730_01.jpg">
+              <h3>2014년 7월 30일</h3> </a>
+     <a href="./img/munjuran/20150621_02.jpg">
+     <img src="./img/munjuran/20150621_02.jpg">
+             <h3>2015년 6월 21일</h3> </a>
+     <a href="./img/munjuran/20160612_03.jpg">
+     <img src="./img/munjuran/20160612_03.jpg">
+             <h3>2016년 6월 12일<h3>  </a>
+     <a href="./img/munjuran/20160814_04.jpg">
+     <img src="./img/munjuran/20160814_04.jpg">
+             <h3>2016년 8월 14일</h3> </a>
+   </div>  
 
-
-
-  </div>
- </div>
- 
-  
-
-<div id="owl__163694_" class="backgroundmoving banner_slide">
-         
-         <div class="item">   <img src="./img/home/01.jpg" alt=""> <span class="caption"> </span> </div>
-         <div class="item">   <img src="./img/home/02.jpg" alt=""> <span class="caption"> </span> </div>
-         <div class="item">   <img src="./img/home/03.jpg" alt=""> <span class="caption"> </span> </div>
-         <div class="item">   <img src="./img/home/04.jpg" alt=""> <span class="caption"> </span> </div>
-         <div class="item">   <img src="./img/home/05.jpg" alt=""> <span class="caption"> </span> </div>
-         <div class="item">   <img src="./img/home/06.jpg" alt=""> <span class="caption"> </span> </div>
-  </div></div>
-</div>
- 
-            <h1 style="color:blue; text-align:center"><strong>팔공산의 사찰과 명소</strong></h1>
-            <h4 style="color:black; text-align:center">갓바위를 비롯한 동화사 오대암 중암암 등 </h4>
-            <h4 style="color:black; text-align:center">비로봉 동봉  수태골등 등<h4>
-
- <!--===== 목록별 정리 끝 =====-->  
-
- 
-   <!-- 라이브리 시티 설치 코드 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC80NDQ1OS8yMDk5MQ==">
-  <script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-  </script>
-<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-</div>
-<!-- 시티 설치 코드 끝 -->         	
+   <div>
+      <a href="./img/munjuran/20160831_05.jpg">
+     <img src="./img/munjuran/20160831_05.jpg">
+              <h3>2016년 8월 31일</h3> </a>
+      <a href="./img/munjuran/20170615_06.jpg">
+     <img src="./img/munjuran/20170615_06.jpg">
+              <h3>2017년 6월 15일</h3> </a>
+      <a href="./img/munjuran/20190527_07.jpg">
+     <img src="./img/munjuran/20190527_07.jpg">
+              <h3>2019년 5월 27일</h3> </a>
+   </div>
+</section> </section>
 
 </body>
 </html>
